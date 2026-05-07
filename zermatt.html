@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zermatt</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <div class="header">
+    <a href="day4-6.html" class="back">← Day 4–6</a>
+    <h1>Zermatt 策馬特</h1>
+    <p>☀️ 晴天優先安排｜長距離一日來回</p>
+    <p>🕐 06:30 出門｜⏱ 10–12 小時</p>
+  </div>
+
+  <!-- 行程卡 -->
+  <div class="card" id="timeline">
+    <h2>行程安排</h2>
+
+    <p><strong>06:30 從 Thun 出發</strong></p>
+    <p>早上搭乘火車前往 Zermatt，為本次行程中距離最遠的一天，建議提早出門。</p>
+
+    <hr class="divider">
+
+    <p><strong>約 09:00 抵達 Zermatt</strong></p>
+    <p class="clickable" onclick="showImage('images/places/zermatt/1.jpg')">
+      抵達後可依天氣安排上山行程，建議優先選擇 Gornergrat 或 Sunnegga。
+    </p>
+
+    <p><strong>09:30–15:00 山區活動</strong></p>
+    <p>建議停留約 4–6 小時，可安排觀景、拍照與簡單步行路線。</p>
+
+    <p><strong>12:00–14:00 建議安排午餐</strong></p>
+    <p>可在山上景觀餐廳或回到 Zermatt 小鎮用餐，依當天行程彈性調整。</p>
+
+    <hr class="divider">
+
+    <p><strong>17:00–18:00 建議回程</strong></p>
+    <p>搭乘原路火車返回 Thun。</p>
+
+    <p><strong>約 20:00–21:00 抵達 Thun</strong></p>
+    <span class="speak" onclick="speak('Zermatt')">
+      Zermatt 🔊
+    </span>
+    <span class="speak" onclick="speak('Thun')">
+      Thun 🔊
+    </span>
+    <span class="speak" onclick="speak('Gornergrat')">
+      Gornergrat 🔊
+    </span>
+    <span class="speak" onclick="speak('Sunnegga')">
+      Sunnegga 🔊
+    </span>
+  </div>
+
+  <!-- 交通卡 -->
+  <div class="card" id="transport">
+    <h2>交通方式</h2>
+
+    <p><strong>出發：Thun → Zermatt</strong></p>
+
+    <p>從 Thun 車站出發，查看電子看板（Departures），搭乘前往 <strong>Visp</strong> 的列車。此段為直達車，車程約 1 小時。</p>
+
+    <p>抵達 Visp 後，依站內指標轉乘前往 <strong>Zermatt</strong> 的列車。轉乘距離短，動線清楚，轉車時間約 5–10 分鐘。</p>
+
+    <p>Visp → Zermatt 為山區鐵路，車程約 1 小時，沿途景觀不錯。</p>
+
+    <hr class="divider">
+
+    <p><strong>Zermatt 當地交通</strong></p>
+
+    <p>Zermatt 為無燃油車小鎮，主要以步行或電動車為主。上山行程可依需求選擇：</p>
+
+    <p>・Gornergrat 登山火車：最經典觀景路線，可直達觀景平台。</p>
+    <p>・Sunnegga 纜車：較輕鬆的觀景選擇，適合時間較緊時安排。</p>
+
+    <hr class="divider">
+
+    <p><strong>回程：Zermatt → Thun</strong></p>
+
+    <p>回程依原路返回，Zermatt → Visp → Thun。班次密集，建議依現場時間選擇最順班次。</p>
+
+    <p>整體單程約 2 小時，來回移動時間較長，建議保留足夠轉乘與候車時間。</p>
+
+    <hr class="divider">
+
+    <p><strong>補充說明</strong></p>
+
+    <p>全程可使用 Swiss Travel Pass 搭乘火車；登山段（Gornergrat / Sunnegga）需另行購票，可於現場購買。</p>
+
+    <p>建議以車站電子看板資訊為準，不需提前鎖定特定班次。</p>
+
+    <div class="links">
+      <a href="#">車站位置</a>
+      <a href="#">Google Map</a>
+      <a href="#">時刻查詢</a>
+    </div>
+  </div>
+
+  <!-- 美食卡 -->
+  <div class="card" id="food">
+    <h2>用餐建議</h2>
+
+    <h3>Zermatt 必吃</h3>
+    <p>Cheese Fondue（起司火鍋）</p>
+    <p>Raclette（融起司料理）</p>
+    <p>Rösti（瑞士薯餅）</p>
+
+    <hr class="divider">
+
+    <h3>推薦餐廳／咖啡館</h3>
+
+    <p><strong>Zermatt</strong></p>
+
+    <p>1. Restaurant Schäferstube</p>
+    <p>地址：Bahnhofstrasse 5, 3920 Zermatt</p>
+    <p>以傳統瑞士料理為主，羊肉與起司料理評價很好。</p>
+
+    <p>2. Whymper-Stube</p>
+    <p>地址：Bahnhofstrasse 31, 3920 Zermatt</p>
+    <p>經典瑞士餐廳，起司火鍋與 Raclette 為招牌。</p>
+
+    <p>3. Brown Cow Pub</p>
+    <p>地址：Bahnhofstrasse 41, 3920 Zermatt</p>
+    <p>較輕鬆的用餐選擇，提供漢堡、排餐與啤酒。</p>
+
+    <hr class="divider">
+
+    <p><strong>山區（Gornergrat）</strong></p>
+
+    <p>1. Restaurant Gornergrat</p>
+    <p>地址：Gornergrat 3089m, 3920 Zermatt</p>
+    <p>高山景觀餐廳，提供簡單熱食與飲品，以景觀為主。</p>
+  </div>
+
+  <!-- 圖片 Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <img id="lightbox-img" src="">
+  </div>
+
+  <!-- nav bar -->
+  <nav class="bottom-nav">
+    <a href="#timeline">行程</a>
+    <a href="#transport">交通</a>
+    <a href="#food">美食</a>
+  </nav>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>

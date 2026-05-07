@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>少女峰</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <div class="header">
+    <a href="day4-6.html" class="back">← Day 4–6</a>
+    <h1>少女峰 + Grindelwald</h1>
+    <p>☀️ 晴天首選｜⭐ 最推薦</p>
+    <p>🕐 07:00 出門｜⏱ 7–9 小時</p>
+  </div>
+
+  <!-- 行程卡 -->
+  <div class="card" id="timeline">
+    <h2>行程安排</h2>
+
+    <p><strong>07:00 從 Thun 出發</strong></p>
+    <p>早上從 Thun 搭車前往Jungfraujoch路線，預計先抵達 Jungfraujoch(少女峰)，再於回程安排 Grindelwald 小鎮停留。</p>
+  
+    <hr class="divider">
+  
+    <p><strong>09:30–10:00 抵達 Jungfraujoch 少女峰</strong></p>
+    <p class="clickable" onclick="showImage('images/places/jungfraujoch/1.jpg')">
+      Jungfraujoch 建議停留約 3–4 小時。當天重要的停留點。
+    </p>
+  
+    <p><strong>12:30–13:30 建議簡單用餐或休息</strong></p>
+    <p>可依當天狀況在 Jungfraujoch 山上簡單用餐，或下山後再於 Grindelwald 找咖啡廳或輕食。若山上天氣非常好，建議不要急著離開。</p>
+  
+    <hr class="divider">
+  
+    <p><strong>13:30–14:30 開始下山</strong></p>
+    <p>回程安排在 Grindelwald 停留。</p>
+  
+    <p class="clickable" onclick="showImage('images/places/grindelwald/1.jpg')">
+      Grindelwald 建議停留約 1–2 小時。適合小鎮散步、拍照、喝咖啡，作為高山行程後比較放鬆的收尾。
+    </p>
+  
+    <p><strong>16:30–17:30 建議從 Grindelwald 回程</strong></p>
+  
+    <p><strong>17:30–19:00 抵達 Thun</strong></p>
+    <p>晚上可在 Thun 附近簡單用餐或休息，不建議再安排需要長距離移動的行程。</p>
+  </div>
+
+  <!-- 交通卡 -->
+  <div class="card" id="transport">
+    <h2>交通方式</h2>
+  
+    <p><strong>出發：Thun → Jungfraujoch（經 Grindelwald）</strong></p>
+  
+    <p>從 Thun 車站出發，於現場查看電子看板（Departures），尋找前往 <strong>Interlaken Ost</strong> 的列車。此段為直達車，車程約 30 分鐘，班次頻繁，可直接搭乘最順的一班。</p>
+  
+    <p>抵達 Interlaken Ost 後，依站內指標轉乘前往 <strong>Grindelwald Terminal</strong> 的列車。轉乘通常為同月台或對面月台，動線簡單，轉車時間約 5–10 分鐘即可完成。</p>
+  
+    <hr class="divider">
+  
+    <p>抵達 Grindelwald Terminal 後，跟隨指標前往纜車站，搭乘 <strong>Eiger Express</strong> 上山至 <strong>Eiger Glacier</strong>。此段為纜車，車程約 15 分鐘，班距穩定。</p>
+  
+    <p>於 Eiger Glacier 下車後，直接轉乘登山齒軌火車前往 <strong>Jungfraujoch</strong>，車程約 25 分鐘，為最後一段上山路線。</p>
+  
+    <hr class="divider">
+  
+    <p><strong>回程：Jungfraujoch → Grindelwald → Thun</strong></p>
+  
+    <p>下山時原路返回，先搭乘登山火車回到 Eiger Glacier，再轉乘纜車返回 Grindelwald Terminal。</p>
+  
+    <p>若安排在 Grindelwald 停留，結束後返回車站，搭乘列車回到 Interlaken Ost，再轉車返回 Thun。</p>
+  
+    <p>整體回程交通方式與上山相同，班次密集，不需提前預約，依現場時間選擇即可。</p>
+  
+    <hr class="divider">
+  
+    <p><strong>補充說明</strong></p>
+  
+    <p>全程可使用 Swiss Travel Pass 搭乘火車與一般交通工具；登山段（Jungfraujoch）需另行購票，可於現場購買。</p>
+  
+    <p>瑞士車站標示清楚，建議以站內電子看板資訊為主，依當下最順班次搭乘即可，不需事先鎖定特定車次。</p>
+  
+    <div class="links">
+      <a href="#">車站位置</a>
+      <a href="#">Google Map</a>
+      <a href="#">時刻查詢</a>
+    </div>
+  </div>
+
+  <!-- 美食卡 -->
+  <div class="card" id="food">
+    <h2>用餐建議</h2>
+  
+    <h3>格林德瓦必吃</h3>
+    <p>Cheese Fondue（起司火鍋）</p>
+    <p>Rösti（瑞士薯餅）</p>
+    <p>Bratwurst（瑞士香腸）</p>
+  
+    <hr class="divider">
+  
+    <h3>推薦餐廳／咖啡館</h3>
+  
+    <p><strong>Grindelwald</strong></p>
+    <p>1. Avocado Bar</p>
+    <p>地址：Dorfstrasse 158, 3818 Grindelwald</p>
+    <p>健康輕食與早午餐為主，主打酪梨料理、沙拉與咖啡。
+        👉 適合：想吃清爽、不油膩、補充體力。</p>
+  
+    <p>2. Café 3692</p>
+    <p>地址：Terrassenweg 37, 3818 Grindelwald</p>
+    <p>以景觀為主的咖啡館，提供咖啡、甜點與簡單輕食。
+        👉 重點：視野很好，適合拍照與休息。</p>
+  
+    <p>3. Restaurant Barry's</p>
+    <p>地址：Dorfstrasse 133, 3818 Grindelwald</p>
+    <p>偏美式與西式料理，提供漢堡、排餐、啤酒。
+        👉 重點：份量大、選擇多，適合想吃一頓完整正餐。</p>
+  
+    <hr class="divider">
+  
+    <h3>Jungfraujoch（少女峰）</h3>
+    <p>1. Crystal Restaurant</p>
+    <p>地址：Jungfraujoch, 3801 Lauterbrunnen</p>
+    <p>位於少女峰上的正式餐廳，提供瑞士與歐式料理。
+        👉 重點：高山用餐體驗，起司料理與熱食為主。</p>
+  </div>
+
+  <!-- 圖片 Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <img id="lightbox-img" src="">
+  </div>
+ 
+  <!-- nav bar -->
+  <nav class="bottom-nav">
+    <a href="#timeline">行程</a>
+    <a href="#transport">交通</a>
+    <a href="#food">美食</a>
+  </nav>
+
+
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>

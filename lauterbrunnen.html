@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lauterbrunnen</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <div class="header">
+    <a href="day4-6.html" class="back">← Day 4–6</a>
+    <h1>Lauterbrunnen 盧達本納</h1>
+    <p>🌤 普通天氣首選｜輕鬆山谷行程</p>
+    <p>🕐 約 09:30 出門｜⏱ 4–6 小時</p>
+  </div>
+
+  <!-- 行程卡 -->
+  <div class="card" id="timeline">
+    <h2>行程安排</h2>
+
+    <p><strong>09:30 從 Thun 出發</strong></p>
+    <p>早上從 Thun 搭車前往 Lauterbrunnen 山谷，整體行程較輕鬆，適合作為天氣普通時的安排。</p>
+
+    <hr class="divider">
+
+    <p><strong>約 10:30–11:00 抵達 Lauterbrunnen</strong></p>
+    <p class="clickable" onclick="showImage('images/places/lauterbrunnen/1.jpg')">
+      抵達後可於山谷內散步、拍照，欣賞瀑布與山谷景觀。
+    </p>
+
+    <p><strong>11:00–14:30 山谷活動</strong></p>
+    <p>建議停留約 3–5 小時，可安排步行路線、瀑布觀景或簡單咖啡休息。</p>
+
+    <p><strong>12:00–13:30 建議安排午餐</strong></p>
+    <p>可在 Lauterbrunnen 小鎮內用餐或咖啡館休息，節奏輕鬆彈性。</p>
+
+    <hr class="divider">
+
+    <p><strong>延伸行程（視時間與體力）</strong></p>
+    <p>可選擇前往 Wengen 或 Mürren，體驗不同角度的山景。</p>
+
+    <hr class="divider">
+
+    <p><strong>15:00–18:00 彈性回程</strong></p>
+    <p>依當天停留時間決定回程時間，返回 Thun。</p>
+  </div>
+
+  <!-- 交通卡 -->
+  <div class="card" id="transport">
+    <h2>交通方式</h2>
+
+    <p><strong>出發：Thun → Lauterbrunnen</strong></p>
+
+    <p>從 Thun 車站出發，查看電子看板（Departures），搭乘前往 <strong>Interlaken Ost</strong> 的列車。此段為直達車，車程約 30 分鐘。</p>
+
+    <p>抵達 Interlaken Ost 後，轉乘前往 <strong>Lauterbrunnen</strong> 的列車。轉乘動線簡單，通常 5–10 分鐘內可完成。</p>
+
+    <p>Interlaken Ost → Lauterbrunnen 車程約 20 分鐘，班次穩定。</p>
+
+    <hr class="divider">
+
+    <p><strong>延伸交通（選擇性）</strong></p>
+
+    <p>・前往 <strong>Wengen</strong>：由 Lauterbrunnen 搭登山火車約 15 分鐘。</p>
+    <p>・前往 <strong>Mürren</strong>：搭纜車至 Grütschalp，再轉火車，全程約 30 分鐘。</p>
+
+    <hr class="divider">
+
+    <p><strong>回程：Lauterbrunnen → Thun</strong></p>
+
+    <p>回程依原路返回，Lauterbrunnen → Interlaken Ost → Thun，班次密集，可依現場時間彈性安排。</p>
+
+    <hr class="divider">
+
+    <p><strong>補充說明</strong></p>
+
+    <p>全程可使用 Swiss Travel Pass 搭乘火車與一般交通工具，無需預約班次。</p>
+
+    <p>建議以車站電子看板資訊為準，選擇最順路線即可。</p>
+
+    <div class="links">
+      <a href="#">車站位置</a>
+      <a href="#">Google Map</a>
+      <a href="#">時刻查詢</a>
+    </div>
+  </div>
+
+  <!-- 美食卡 -->
+  <div class="card" id="food">
+    <h2>用餐建議</h2>
+
+    <h3>Lauterbrunnen 必吃</h3>
+    <p>Rösti（瑞士薯餅）</p>
+    <p>Bratwurst（瑞士香腸）</p>
+    <p>簡單咖啡與甜點</p>
+
+    <hr class="divider">
+
+    <h3>推薦餐廳／咖啡館</h3>
+
+    <p><strong>Lauterbrunnen</strong></p>
+
+    <p>1. Airtime Café</p>
+    <p>地址：Aegerten 1079C, 3822 Lauterbrunnen</p>
+    <p>咖啡、甜點與輕食為主，氣氛輕鬆，適合休息。</p>
+
+    <p>2. Restaurant Weidstübli</p>
+    <p>地址：Wengiboden 1352A, 3823 Wengen</p>
+    <p>提供瑞士料理與西式餐點，份量充足。</p>
+
+    <p>3. Hotel Oberland Restaurant</p>
+    <p>地址：Fuhren, 3822 Lauterbrunnen</p>
+    <p>傳統瑞士料理，起司與肉類料理較受歡迎。</p>
+  </div>
+
+  <!-- 圖片 Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <img id="lightbox-img" src="">
+  </div>
+
+  <!-- nav bar -->
+  <nav class="bottom-nav">
+    <a href="#timeline">行程</a>
+    <a href="#transport">交通</a>
+    <a href="#food">美食</a>
+  </nav>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>

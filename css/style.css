@@ -1,0 +1,431 @@
+  /* 讓捲動更平滑（寫在最上面） */
+  html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont;
+    color: #fff;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 80px;
+  }
+  
+  /* 背景層 */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: saturate(60%) brightness(90%);
+    background: url('../images/background/alps.jpg') no-repeat center/cover;
+    z-index: -2;
+  }
+  
+  body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  
+    background: linear-gradient(
+      to bottom,
+      rgba(0,0,0,0.4),
+      rgba(0,0,0,0.65)
+    );
+  
+    z-index: -1;
+  }
+  
+  /* Header */
+  .header {
+    position: relative;
+    padding: 20px 16px 0 16px;
+  }
+  
+  /* 上方遮罩 */
+  .header::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    height: 120px;
+  
+    background: linear-gradient(
+      to bottom,
+      rgba(0,0,0,0.65),
+      rgba(0,0,0,0)
+    );
+  
+    z-index: -1;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 8px 0;
+  }
+  
+  .header p {
+    opacity: 0.9;
+  }
+  
+  .back {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 999px;
+  
+    color: rgba(255,255,255,0.95);
+    font-size: 14px;
+    text-decoration: none;
+  
+    background: rgba(0,0,0,0.35);
+    backdrop-filter: blur(6px);
+  
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+
+  .home-header {
+  padding: 48px 20px 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.home-header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+
+  margin: 0 0 10px 0;
+  color: rgba(255,255,255,0.95);
+
+  text-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.home-header p:nth-of-type(1) {
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 0.85;
+  margin: 4px 0;
+}
+
+.home-header p:nth-of-type(2) {
+  font-size: 14px;
+  font-weight: 300;
+  opacity: 0.6;
+  margin-top: 6px;
+}
+  
+  /* 首頁header */
+  .home-header {
+    padding: 48px 20px 20px;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .home-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 34px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  
+    margin: 0 0 10px 0;
+    color: rgba(255,255,255,0.95);
+  
+    text-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+  
+  .home-header p:nth-of-type(1) {
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0.85;
+    margin: 4px 0;
+  }
+  
+  .home-header p:nth-of-type(2) {
+    font-size: 14px;
+    font-weight: 300;
+    opacity: 0.6;
+    margin-top: 6px;
+  }
+
+  /* Card */
+  .card {
+    margin: 16px;
+    padding: 18px;
+    border-radius: 18px;
+  
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+  
+    border: 1px solid rgba(255,255,255,0.2);
+  
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  }
+  
+  .card h2 {
+    margin-top: 0;
+  }
+
+  .card p {
+    margin: 10px 0;
+    line-height: 1.6;
+    color: rgba(255,255,255,0.9);
+  }
+  
+  /* Clickable */
+  .clickable {
+    color: #9cd6ff;
+    font-weight: 500;
+  }
+  
+  /* Lightbox */
+  .lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+  }
+
+  .divider {
+    border: none;
+    height: 1px;
+    background: rgba(255,255,255,0.2);
+    margin: 16px 0;
+  }
+  
+  .bottom-nav {
+    position: fixed;
+    /* 增加底部距離，避開手機操作條 */
+    bottom: 25px; 
+    left: 50%;
+    transform: translateX(-50%);
+    
+    /* 強制置頂，數值要大於所有 ::before 或卡片的層次 */
+    z-index: 10 !important; 
+    width: max-content;
+    gap: 4px;   
+    background: rgba(255, 238, 0, 0.76); /* 稍微深一點，確保文字清晰 */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* 針對 iOS Safari */
+    
+    padding: 6px 10px;
+    border-radius: 40px;
+    border: 1px solid rgba(255, 238, 0, 0.76);
+    
+    display: flex;
+    box-shadow: 0 4px 15px rgba(73, 48, 33, 0.2);
+  }
+  
+  /* 針對導覽連結的樣式 */
+  .bottom-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 2px 6px;
+    -webkit-tap-highlight-color: transparent; /* 移除手機點擊時的藍色框 */
+  }
+  
+  /* 讓點擊更有回饋感（取代 hover） */
+  .bottom-nav a:active {
+    opacity: 0.5;
+  }
+
+  .plan-container {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  /* 整條卡 */
+  .plan-bar {
+    display: flex;
+    align-items: stretch;
+    height: 72px;
+    border-radius: 18px;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* 背景圖（用 before） */
+  .plan-bar::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+  
+    background-size: cover;
+    background-position: center;
+  
+    filter: brightness(0.8);
+    z-index: 0;
+  }
+  
+  /* 每張圖個別設定 */
+  .plan-bar:nth-child(1)::before {
+    background-image: url('../images/places/jungfraujoch-1.jpg');
+  }
+  .plan-bar:nth-child(2)::before {
+    background-image: url('../images/places/zermatt-1.jpg');
+  }
+  .plan-bar:nth-child(3)::before {
+    background-image: url('../images/places/lauterbrunnen-1.jpg');
+  }
+  .plan-bar:nth-child(4)::before {
+    background-image: url('../images/places/brienz-1.png');
+  }
+  .plan-bar:nth-child(5)::before {
+    background-image: url('../images/places/thun-1.png');
+  }
+  
+  /* icon */
+  .weather {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: auto;
+    z-index: 2;   /* ⬅️ 關鍵 */
+    font-size: 40px;        /* ⬅️ 放大 icon */
+  
+    background: rgba(255, 255, 255, 0.822);      /* ⬅️ 白底 */
+    color: black;
+  
+    border-radius: 18px 0 0 18px;  /* ⬅️ 左邊圓角 */
+  }
+  /* 文字 */
+  .label {
+    position: relative;
+    z-index: 2;
+  
+    flex: 1;
+  
+    display: flex;
+    flex-direction: column;   /* ⬅️ 這行才是換行關鍵 */
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 50px;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 5px;
+  }
+
+  .label .zh {
+    font-size: 16px;
+    font-weight: 350;   /* ⬅️ 細體關鍵 */
+    opacity: 0.85;
+    margin-top: 2px;
+  }
+
+   /* 首頁css開頭 */
+ /* ===== 首頁 Header ===== */
+.header {
+    padding: 40px 20px 10px;
+    text-align: left;
+  }
+  
+  .header h1 {
+    font-size: 28px;
+    margin: 0;
+  }
+  
+  .header p {
+    margin: 6px 0;
+    opacity: 0.8;
+  }
+  
+  /* ===== 月曆 Grid ===== */
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 手機版三欄排版 */
+    gap: 12px;
+    padding: 16px;
+  }
+  
+ /* ===== 紙張卡片主體 ===== */
+ .day-tile.paper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+    
+    background: white; /* 純白背景，簡單乾淨 */
+    text-decoration: none;
+    color: #333;
+    border-radius: 2px;
+    
+    /* 確保內容不超出，並給一個基礎陰影 */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.1s ease;
+    overflow: hidden; /* 關鍵：裁切掉超出邊框的部分 */
+  }
+  
+  /* 關鍵 1：模擬切掉後的背景深色 (露出山景的感覺) */
+  .day-tile.paper {
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% calc(100% - 25px),
+      calc(100% - 25px) 100%,
+      0 100%
+    );
+  }
+  
+  /* 關鍵 2：真正的翻頁折角 */
+  .day-tile.paper::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    
+    /* 利用邊框畫出完美的三角形 */
+    /* 寬度與高度要一致，顏色要從亮到暗模擬捲曲 */
+    border-style: solid;
+    border-width: 25px 25px 0 0;
+    border-color: #f0f0f0 transparent transparent #e0e0e0; 
+    
+    /* 增加一點立體陰影 */
+    filter: drop-shadow(-2px -2px 3px rgba(0,0,0,0.15));
+    z-index: 2;
+  }
+  
+  /* 文字層級要提升，才不會被折角蓋住 */
+  .day-tile .day, 
+  .day-tile .num, 
+  .day-tile .date {
+    position: relative;
+    z-index: 3;
+  }
+  
+  .day-tile .day { font-size: 13px; color: #999; margin-bottom: 4px; }
+  .day-tile .num { font-size: 32px; font-weight: 800; color: #222; }
+  .day-tile .date { font-size: 13px; color: #777; margin-top: 4px; }
+  
+  .day-tile.paper:active {
+    transform: scale(0.96);
+  }
+   /* 首頁css終點 */
