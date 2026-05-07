@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lausanne</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="detail-page">
+
+  <!-- Header -->
+  <div class="header">
+    <a href="day2.html" class="back">← Day 2</a>
+    <h1>Lausanne</h1>
+    <p>🌤 普通天氣備案｜🏙 輕鬆城市半日</p>
+    <p>🕙 約 10:00 出發｜⏱ 2–4 小時</p>
+  </div>
+
+  <!-- 行程卡 -->
+  <div class="card" id="timeline">
+    <h2>行程安排</h2>
+
+    <p><strong>10:00 從 Montreux 出發</strong></p>
+    <p>從 Montreux 車站搭火車前往 Lausanne，車程約 20 分鐘，班次密集。</p>
+
+    <p><strong>10:30 抵達 Lausanne</strong></p>
+    <p>出站後可直接進入市區活動。</p>
+
+    <hr class="divider">
+
+    <p><strong>10:30–12:30 市區散步</strong></p>
+    <p class="clickable" onclick="showImage('images/places/lausanne/1.jpg')">
+      可前往 Lausanne 老城區、主教堂（Cathédrale de Lausanne），城市建築帶有坡度與層次感，很適合慢慢走。
+    </p>
+
+    <p><strong>12:30–13:30 湖邊區（Ouchy）</strong></p>
+    <p class="clickable" onclick="showImage('images/places/lausanne/2.jpg')">
+      搭地鐵或步行前往湖邊，風景比市區更開闊，適合放鬆與拍照。
+    </p>
+
+    <hr class="divider">
+
+    <p><strong>13:30–14:00 返回 Montreux</strong></p>
+    <p>搭乘原路火車返回，車程約 20 分鐘。</p>
+
+    <p><strong>下午：湖邊散步 / 休息</strong></p>
+  </div>
+
+  <!-- 交通卡 -->
+  <div class="card" id="transport">
+    <h2>交通方式</h2>
+
+    <p><strong>Montreux → Lausanne</strong></p>
+    <p>搭乘往 Lausanne 方向火車，車程約 20 分鐘。</p>
+    <p>班次：約每 10–20 分鐘一班。</p>
+
+    <hr class="divider">
+
+    <p><strong>Lausanne 市內移動</strong></p>
+    <p>可選擇：</p>
+
+    <p>• 步行（市區坡度較多）<br>
+       • 地鐵（推薦）</p>
+
+    <p>👉 地鐵 M2：市區 ↔ 湖邊（Ouchy）</p>
+    <p>車程：約 5–10 分鐘</p>
+
+    <hr class="divider">
+
+    <p><strong>Lausanne → Montreux</strong></p>
+    <p>搭乘原路火車返回，車程約 20 分鐘。</p>
+
+    <hr class="divider">
+
+    <p><strong>補充說明</strong></p>
+    <p>全程可使用 Swiss Travel Pass 搭乘火車與地鐵。</p>
+    <p>不需預約班次，現場直接搭乘即可。</p>
+
+    <div class="links">
+      <a href="#">車站位置</a>
+      <a href="#">Google Map</a>
+      <a href="#">時刻查詢</a>
+    </div>
+  </div>
+
+  <!-- 圖片 Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <img id="lightbox-img" src="">
+  </div>
+
+  <!-- nav bar -->
+  <nav class="bottom-nav">
+    <a href="#timeline">行程</a>
+    <a href="#transport">交通</a>
+  </nav>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>

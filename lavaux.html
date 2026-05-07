@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lavaux + Chillon</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="detail-page">
+
+  <!-- Header -->
+  <div class="header">
+    <a href="day2.html" class="back">← Day 2</a>
+    <h1>Lavaux + Chillon</h1>
+    <p>☀️ 晴天首選｜🌿 經典湖景路線</p>
+    <p>🕘 約 09:00 出發｜⏱ 半日～整日</p>
+  </div>
+
+  <!-- 行程卡 -->
+  <div class="card" id="timeline">
+    <h2>行程安排</h2>
+
+    <p><strong>09:00 從 Montreux 出發</strong></p>
+    <p>從 Montreux 車站搭火車前往 Lavaux 葡萄園區，車程約 15–25 分鐘，班次密集，現場看電子看板即可。</p>
+
+    <p><strong>09:30–12:00 Lavaux 葡萄園</strong></p>
+    <p class="clickable" onclick="showImage('images/places/lavaux/1.jpg')">
+      建議於 Cully、Epesses 或 Rivaz 下車，沿著梯田步道散步，湖景與葡萄園交錯，是瑞士最經典景色之一。
+    </p>
+
+    <hr class="divider">
+
+    <p><strong>12:30 返回 Montreux</strong></p>
+    <p>搭乘原路火車返回，車程約 20 分鐘。</p>
+
+    <p><strong>13:30 前往 Chillon Castle 西庸古堡</strong></p>
+    <p>可選擇公車、火車或遊船前往。</p>
+
+    <p><strong>14:00–15:30 古堡停留</strong></p>
+    <p class="clickable" onclick="showImage('images/places/chillon/1.jpg')">
+      建議停留約 1–1.5 小時，可進入古堡參觀或於湖邊拍照。
+    </p>
+
+    <hr class="divider">
+
+    <p><strong>15:30 返回 Montreux</strong></p>
+    <p>車程約 5–10 分鐘。</p>
+
+    <p><strong>16:30（可選）湖上遊船</strong></p>
+    <p>傍晚搭船最漂亮，航程約 1–2 小時，可往返 Vevey 或 Chillon。</p>
+
+    <p><strong>晚上：湖邊散步 / 晚餐 / 休息</strong></p>
+  </div>
+
+  <!-- 交通卡 -->
+  <div class="card" id="transport">
+    <h2>交通方式</h2>
+
+    <p><strong>Montreux → Lavaux</strong></p>
+    <p>搭乘往 Lausanne 方向列車，車程約 15–25 分鐘。</p>
+    <p>建議下車站：</p>
+    <p>• Cully（最方便）<br>
+       • Epesses（熱門拍照點）<br>
+       • Rivaz（較安靜）</p>
+
+    <hr class="divider">
+
+    <p><strong>Lavaux → Montreux</strong></p>
+    <p>搭乘原路火車返回，約 20 分鐘。</p>
+
+    <hr class="divider">
+
+    <p><strong>Montreux → Chillon Castle</strong></p>
+
+    <p>① 公車（Bus 201）<br>
+       約 7 分鐘，最簡單</p>
+
+    <p>② 火車<br>
+       Montreux → Veytaux-Chillon（4 分鐘）＋步行</p>
+
+    <p>③ 遊船（推薦）<br>
+       約 10 分鐘，風景最好</p>
+
+    <hr class="divider">
+
+    <p><strong>補充說明</strong></p>
+    <p>全程可使用 Swiss Travel Pass 搭乘火車、公車與船。</p>
+    <p>不需購票或預約，直接看現場班次搭乘即可。</p>
+    <p>車站與港口距離近，步行即可完成轉乘。</p>
+
+    <div class="links">
+      <a href="#">車站位置</a>
+      <a href="#">Google Map</a>
+      <a href="#">時刻查詢</a>
+    </div>
+  </div>
+
+  <!-- 圖片 Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <img id="lightbox-img" src="">
+  </div>
+
+  <!-- nav bar -->
+  <nav class="bottom-nav">
+    <a href="#timeline">行程</a>
+    <a href="#transport">交通</a>
+  </nav>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>

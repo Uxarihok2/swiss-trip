@@ -16,28 +16,18 @@ body {
   body::before {
     content: "";
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    filter: saturate(60%) brightness(90%);
-    background: url('../images/background/alps.jpg') no-repeat center/cover;
-    z-index: -2;
-  }
+    inset: 0;
   
-  body::after {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  
-    background: linear-gradient(
-      to bottom,
-      rgba(0,0,0,0.4),
-      rgba(0,0,0,0.65)
-    );
+    background:
+      radial-gradient(circle at 85% 85%, rgba(255, 235, 120, 0.25), transparent 40%),
+      radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.15), transparent 35%),
+      linear-gradient(
+        135deg,
+        #3396cc,
+        #49b3c7,
+        #6ec9b0,
+        #cfe87a
+      );
   
     z-index: -1;
   }
@@ -46,24 +36,6 @@ body {
   .header {
     position: relative;
     padding: 20px 16px 0 16px;
-  }
-  
-  /* 上方遮罩 */
-  .header::before {
-    content: "";
-    position: absolute;
-    top: -40px;
-    left: 0;
-    width: 100%;
-    height: 120px;
-  
-    background: linear-gradient(
-      to bottom,
-      rgba(0,0,0,0.65),
-      rgba(0,0,0,0)
-    );
-  
-    z-index: -1;
   }
   
   .header h1 {
@@ -79,6 +51,7 @@ body {
   .back {
     display: inline-block;
     padding: 6px 12px;
+    margin-bottom: 10px;
     border-radius: 999px;
   
     color: rgba(255,255,255,0.95);
@@ -156,7 +129,7 @@ body {
 
   /* Card */
   .card {
-    margin: 16px;
+    margin: 0 16px 10px 16px;
     padding: 18px;
     border-radius: 18px;
   
@@ -248,7 +221,7 @@ body {
   }
 
   .plan-container {
-    padding: 16px;
+    padding: 0 16px;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -323,11 +296,15 @@ body {
     flex-direction: column;   /* ⬅️ 這行才是換行關鍵 */
     justify-content: center;
     align-items: flex-start;
-    padding-left: 50px;
+    padding-left: 35px;
     font-size: 25px;
     font-weight: 600;
     line-height: 1.2;
     letter-spacing: 5px;
+  }
+
+  .label .long-text {
+      font-size: 18px;
   }
 
   .label .zh {
@@ -337,10 +314,37 @@ body {
     margin-top: 2px;
   }
 
+  /* 旅程敘述頁專用字色 */
+.detail-page {
+    color: #2f2f2f; /* 深灰主色 */
+  }
+  
+  /* 標題 */
+  .detail-page h1,
+  .detail-page h2,
+  .detail-page h3 {
+    color: #1f1f1f;
+  }
+  
+  /* 內文 */
+  .detail-page p {
+    color: #3a3a3a;
+  }
+  
+  /* 強調文字 */
+  .detail-page strong {
+    color: #1f1f1f;
+  }
+  
+  /* 分隔線 */
+  .detail-page .divider {
+    border-color: rgba(0,0,0,0.15);
+  }
+
    /* 首頁css開頭 */
  /* ===== 首頁 Header ===== */
 .header {
-    padding: 40px 20px 10px;
+    padding: 25px 20px 15px;
     text-align: left;
   }
   

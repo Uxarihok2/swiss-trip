@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lake Cruise</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="detail-page">
+
+  <!-- Header -->
+  <div class="header">
+    <a href="day2.html" class="back">← Day 2</a>
+    <h1>Lake Cruise</h1>
+    <p>✨ 加分行程｜🌅 傍晚最推薦</p>
+    <p>🕓 16:30–18:30｜⏱ 1–2 小時</p>
+  </div>
+
+  <!-- 行程卡 -->
+  <div class="card" id="timeline">
+    <h2>行程安排</h2>
+
+    <p><strong>16:00–16:30 前往港口</strong></p>
+    <p>從 Montreux 車站步行約 5 分鐘即可抵達碼頭（Quai）。</p>
+
+    <p><strong>16:30–18:00 湖上遊船</strong></p>
+    <p class="clickable" onclick="showImage('images/places/lake/1.jpg')">
+      搭乘日內瓦湖遊船，沿著湖岸前進，可欣賞葡萄園、小鎮與遠方山景。
+    </p>
+
+    <p>常見航線：</p>
+    <p>• Montreux ↔ Vevey<br>
+       • Montreux ↔ Chillon</p>
+
+    <hr class="divider">
+
+    <p><strong>18:00 返回 Montreux</strong></p>
+    <p>回到港口後，可直接安排晚餐或湖邊散步。</p>
+
+    <p><strong>晚上：湖邊散步 / 晚餐</strong></p>
+    <p class="clickable" onclick="showImage('images/places/lake/2.jpg')">
+      傍晚光線非常柔和，是這趟旅程最放鬆的時段之一。
+    </p>
+  </div>
+
+  <!-- 交通卡 -->
+  <div class="card" id="transport">
+    <h2>交通方式</h2>
+
+    <p><strong>Montreux → 港口</strong></p>
+    <p>從車站步行約 5 分鐘即可抵達。</p>
+
+    <hr class="divider">
+
+    <p><strong>搭船方式</strong></p>
+    <p>於港口查看電子看板（Departures），選擇適合時間的班次上船即可。</p>
+
+    <p>航程：約 1–2 小時</p>
+    <p>班次：依時間不同，每日多班</p>
+
+    <hr class="divider">
+
+    <p><strong>補充說明</strong></p>
+    <p>持 Swiss Travel Pass 可免費搭乘大部分湖上船班。</p>
+    <p>不需預約座位，直接上船即可。</p>
+    <p>建議選擇傍晚時段（光線最美）。</p>
+
+    <div class="links">
+      <a href="#">碼頭位置</a>
+      <a href="#">Google Map</a>
+      <a href="#">船班時刻</a>
+    </div>
+  </div>
+
+  <!-- 體驗卡（這頁特別加的） -->
+  <div class="card" id="experience">
+    <h2>體驗重點</h2>
+
+    <p>這段行程的重點不是「去哪裡」，而是「在船上的感覺」。</p>
+
+    <p>👉 湖面非常平靜<br>
+       👉 風很舒服<br>
+       👉 景色是慢慢流動的</p>
+
+    <p>如果天氣不錯，這會是整趟旅程中最放鬆的一段時間。</p>
+
+    <hr class="divider">
+
+    <p>建議：</p>
+    <p>• 坐戶外座位（天氣好時）<br>
+       • 帶一點輕外套（湖上會有風）<br>
+       • 不用一直拍照，放空更值得</p>
+  </div>
+
+  <!-- 圖片 Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <img id="lightbox-img" src="">
+  </div>
+
+  <!-- nav bar -->
+  <nav class="bottom-nav">
+    <a href="#timeline">行程</a>
+    <a href="#transport">交通</a>
+    <a href="#experience">體驗</a>
+  </nav>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>

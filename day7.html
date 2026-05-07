@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 7</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="detail-page">
+
+  <!-- Header -->
+  <div class="header">
+    <a href="index.html" class="back">← 行程總覽</a>
+    <h1>Day 7｜Thun → Geneva</h1>
+    <p>🚆 移動日｜🏙 回到城市</p>
+    <p>🕐 約 09:00 出發｜⏱ 約 2.5–3 小時車程</p>
+  </div>
+
+  <!-- 行程卡 -->
+  <div class="card" id="timeline">
+    <h2>行程安排</h2>
+
+    <p><strong>約 09:00 從 Thun 出發</strong></p>
+    <p>從住宿步行至 Thun 車站（約 8–10 分鐘），建議搭乘 09:00 左右班次。</p>
+
+    <p><strong>12:00–12:30 抵達 Geneva</strong></p>
+    <p class="clickable" onclick="showImage('images/places/geneva/1.jpg')">
+      全程約 2.5–3 小時，沿途為湖景與城市交錯，作為旅程尾聲的移動段。
+    </p>
+
+    <hr class="divider">
+
+    <p><strong>下午｜市區行程</strong></p>
+
+    <p>13:30–15:30</p>
+    <p>百達翡麗博物館（Patek Philippe Museum）參觀，建議停留約 2 小時。</p>
+
+    <p>15:30–18:00</p>
+    <p>市區散步、咖啡或晚餐，感受日內瓦城市氛圍。</p>
+
+    <hr class="divider">
+
+    <p><strong>晚上｜前往機場住宿</strong></p>
+
+    <p>18:00–19:00 建議出發</p>
+    <p>前往 Mercure Geneva Airport，為隔日航班做準備。</p>
+
+  </div>
+
+  <!-- 交通卡 -->
+  <div class="card" id="transport">
+    <h2>交通方式</h2>
+
+    <p><strong>Thun → Geneva（轉車 1 次）</strong></p>
+
+    <p>從 Thun 車站出發，查看電子看板（Departures），搭乘前往 <strong>Fribourg</strong> 或 <strong>Bern</strong> 方向列車。</p>
+
+    <hr class="divider">
+
+    <p><strong>第一段：Thun → Fribourg / Bern</strong></p>
+
+    <p>車程約 1 小時，班次約每 30 分鐘一班。</p>
+
+    <hr class="divider">
+
+    <p><strong>轉車</strong></p>
+
+    <p>於 Fribourg 或 Bern 下車後依電子看板轉乘前往 Geneva 的列車。</p>
+
+    <p>轉車時間約 5–10 分鐘，月台距離短，動線簡單。</p>
+
+    <hr class="divider">
+
+    <p><strong>第二段：Fribourg → Geneva</strong></p>
+
+    <p>車程約 1 小時 20 分。</p>
+
+    <p>整體抵達時間約 11:30–12:30（依班次而定）。</p>
+
+    <hr class="divider">
+
+    <p><strong>票務與行李</strong></p>
+
+    <p>持 Swiss Travel Pass 可直接上車，不需購票或劃位。</p>
+
+    <p>車廂設有行李區，轉車距離短，拖行李方便。</p>
+
+    <hr class="divider">
+
+    <p><strong>Geneva 市區 → 機場住宿</strong></p>
+
+    <p>從 Genève Cornavin 車站搭乘前往 <strong>Genève-Aéroport</strong> 的列車。</p>
+
+    <p>車程約 7 分鐘，班次密集。</p>
+
+    <p>抵達後可依指標步行或搭乘飯店接駁車前往住宿。</p>
+
+    <div class="links">
+      <a href="#">車站位置</a>
+      <a href="#">Google Map</a>
+      <a href="#">時刻查詢</a>
+    </div>
+  </div>
+
+  <!-- 美食卡 -->
+  <div class="card" id="food">
+    <h2>用餐建議</h2>
+
+    <h3>Geneva 市區</h3>
+
+    <p>・法式餐廳（Bistro / Brasserie）</p>
+    <p>・湖畔咖啡廳</p>
+    <p>・簡單晚餐或輕食</p>
+
+    <hr class="divider">
+
+    <h3>建議方向</h3>
+
+    <p>這一天不需要安排過於密集的行程，以放鬆與收尾為主。</p>
+
+    <p>找一間喜歡的餐廳，好好吃一頓，會是很好的旅程結尾。</p>
+
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <img id="lightbox-img" src="">
+  </div>
+
+  <!-- nav -->
+  <nav class="bottom-nav">
+    <a href="#timeline">行程</a>
+    <a href="#transport">交通</a>
+    <a href="#food">美食</a>
+  </nav>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>
