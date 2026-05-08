@@ -7,19 +7,22 @@ function showImage(src) {
     this.style.display = "none";
   };
 
-  function speak(text) {
-    const utterance = new SpeechSynthesisUtterance(text);
+  function speak(text, lang = "de-DE") {
+
+    const speech = new SpeechSynthesisUtterance(text);
   
-    // 等 voices 載入
-    const voices = speechSynthesis.getVoices();
+    const voices = window.speechSynthesis.getVoices();
   
-    if (voices.length > 0) {
-      utterance.voice = voices.find(v => v.lang.includes("de")) || voices[0];
+    // 找對應語言 voice
+    const selectedVoice = voices.find(
+      voice => voice.lang === lang
+    );
+  
+    if (selectedVoice) {
+      speech.voice = selectedVoice;
     }
   
-    utterance.lang = "de-CH";
-    utterance.rate = 0.9;
+    speech.lang = lang;
   
-    speechSynthesis.cancel();
-    speechSynthesis.speak(utterance);
+    window.speechSynthesis.speak(speech);
   }
