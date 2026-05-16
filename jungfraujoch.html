@@ -13,79 +13,349 @@
     <a href="day4-6.html" class="back">← Day 4–6</a>
     <h1>少女峰 + Grindelwald</h1>
     <p>☀️ 晴天首選｜⭐ 最推薦</p>
-    <p>🕐 07:00 出門｜⏱ 7–9 小時</p>
+    <p>🕐 06:30 出門｜⏱ 7–9 小時</p>
   </div>
 
-  <!-- 行程卡 -->
-  <div class="card" id="timeline">
-    <h2>行程安排</h2>
+<!-- 行程卡 -->
+<div class="card" id="timeline">
+  <h2>行程安排</h2>
 
-    <p><strong>07:00 從 Thun 出發</strong></p>
-    <p>早上從 Thun 搭車前往Jungfraujoch路線，預計先抵達 Jungfraujoch(少女峰)，再於回程安排 Grindelwald 小鎮停留。</p>
-  
-    <hr class="divider">
-  
-    <p><strong>09:30–10:00 抵達 Jungfraujoch 少女峰</strong></p>
-    <p class="clickable" onclick="showImage('images/places/jungfraujoch/1.jpg')">
-      Jungfraujoch 建議停留約 3–4 小時。當天重要的停留點。
-    </p>
-  
-    <p><strong>12:30–13:30 建議簡單用餐或休息</strong></p>
-    <p>可依當天狀況在 Jungfraujoch 山上簡單用餐，或下山後再於 Grindelwald 找咖啡廳或輕食。若山上天氣非常好，建議不要急著離開。</p>
-  
-    <hr class="divider">
-  
-    <p><strong>13:30–14:30 開始下山</strong></p>
-    <p>回程安排在 Grindelwald 停留。</p>
-  
-    <p class="clickable" onclick="showImage('images/places/grindelwald/1.jpg')">
-      Grindelwald 建議停留約 1–2 小時。適合小鎮散步、拍照、喝咖啡，作為高山行程後比較放鬆的收尾。
-    </p>
-  
-    <p><strong>16:30–17:30 建議從 Grindelwald 回程</strong></p>
-  
-    <p><strong>17:30–19:00 抵達 Thun</strong></p>
-    <p>晚上可在 Thun 附近簡單用餐或休息，不建議再安排需要長距離移動的行程。</p>
-  </div>
+  <p><strong>06:30 從住宿出發</strong></p>
+  <p>
+    從 MCP_Central Boutique Apartment 步行前往 Thun 車站（約 8–10 分鐘），
+    建議搭乘 06:54 班次前往 Jungfraujoch 少女峰。
+  </p>
+  <span class="speak" onclick="speak('Jungfraujoch', 'de-CH')">
+    Jungfraujoch 🔊
+  </span>
+  <p><strong>06:54 從 Thun 出發</strong></p>
+  <p>
+    路線為：
+    Thun → Interlaken Ost → Grindelwald Terminal → Eiger Glacier → Jungfraujoch。
+  </p>
+  <span class="speak" onclick="speak('Thun', 'de-CH')">
+    Thun 🔊
+  </span>
+  <span class="speak" onclick="speak('Interlaken', 'de-CH')">
+    Interlaken 🔊
+  </span>
+  <span class="speak" onclick="speak('Grindelwald', 'de-CH')">
+    Grindelwald 🔊
+  </span>
+  <span class="speak" onclick="speak('Eiger', 'de-CH')">
+    Eiger 🔊
+  </span>
+  <p>
+    全程約 2 小時 17 分，
+    中途包含火車、Eiger Express 纜車與登山齒軌火車。
+  </p>
 
-  <!-- 交通卡 -->
-  <div class="card" id="transport">
-    <h2>交通方式</h2>
-  
-    <p><strong>出發：Thun → Jungfraujoch（經 Grindelwald）</strong></p>
-  
-    <p>從 Thun 車站出發，於現場查看電子看板（Departures），尋找前往 <strong>Interlaken Ost</strong> 的列車。此段為直達車，車程約 30 分鐘，班次頻繁，可直接搭乘最順的一班。</p>
-  
-    <p>抵達 Interlaken Ost 後，依站內指標轉乘前往 <strong>Grindelwald Terminal</strong> 的列車。轉乘通常為同月台或對面月台，動線簡單，轉車時間約 5–10 分鐘即可完成。</p>
-  
-    <hr class="divider">
-  
-    <p>抵達 Grindelwald Terminal 後，跟隨指標前往纜車站，搭乘 <strong>Eiger Express</strong> 上山至 <strong>Eiger Glacier</strong>。此段為纜車，車程約 15 分鐘，班距穩定。</p>
-  
-    <p>於 Eiger Glacier 下車後，直接轉乘登山齒軌火車前往 <strong>Jungfraujoch</strong>，車程約 25 分鐘，為最後一段上山路線。</p>
-  
-    <hr class="divider">
-  
-    <p><strong>回程：Jungfraujoch → Grindelwald → Thun</strong></p>
-  
-    <p>下山時原路返回，先搭乘登山火車回到 Eiger Glacier，再轉乘纜車返回 Grindelwald Terminal。</p>
-  
-    <p>若安排在 Grindelwald 停留，結束後返回車站，搭乘列車回到 Interlaken Ost，再轉車返回 Thun。</p>
-  
-    <p>整體回程交通方式與上山相同，班次密集，不需提前預約，依現場時間選擇即可。</p>
-  
-    <hr class="divider">
-  
-    <p><strong>補充說明</strong></p>
-  
-    <p>全程可使用 Swiss Travel Pass 搭乘火車與一般交通工具；登山段（Jungfraujoch）需另行購票，可於現場購買。</p>
-  
-    <p>瑞士車站標示清楚，建議以站內電子看板資訊為主，依當下最順班次搭乘即可，不需事先鎖定特定車次。</p>
+  <hr class="divider">
+
+  <p><strong>09:10–09:30 抵達 Jungfraujoch 少女峰</strong></p>
+
+  <p class="clickable" onclick="showImage('images/places/jungfraujoch/1.jpg')">
+    Jungfraujoch（Top of Europe）海拔約 3454 公尺，
+    為歐洲最著名高山觀景區之一。
+  </p>
+
+  <p>
+    建議停留約 3–4 小時。
+  </p>
+
+  <hr class="divider">
+
+  <p><strong>Jungfraujoch 山上重點區域</strong></p>
+
+  <p><strong>1. Sphinx Observatory 史芬克斯觀景台</strong></p>
+  <p>
+    Jungfraujoch 最重要觀景點，可俯瞰阿萊奇冰河（Aletsch Glacier）與阿爾卑斯山群。
+  </p>
+  <span class="speak" onclick="speak('Sphinx Observatory', 'en-GB')">
+    Sphinx Observatory 🔊
+  </span>
+  <span class="speak" onclick="speak('Aletsch', 'de-CH')">
+    Aletsch 🔊
+  </span>
+  <span class="speak" onclick="speak('Glacier', 'en-GB')">
+    Glacier 🔊
+  </span>
+  <p><strong>2. Aletsch Glacier 阿萊奇冰河</strong></p>
+  <p>
+    阿爾卑斯山最大冰河，也是 UNESCO 世界自然遺產。
+  </p>
+
+  <p><strong>3. Ice Palace 冰宮</strong></p>
+  <p>
+    位於冰河下方的冰雕隧道，可直接行走於冰層之中。
+  </p>
+
+  <p><strong>4. Snow Fun / Plateau 雪原平台</strong></p>
+  <p>
+    戶外雪地區域，可近距離感受高山雪景與冰河。
+  </p>
+  <span onclick="speak('Plateau', 'fr-CH')">
+    Plateau 🔊
+  </span>
+  <p><strong>5. Alpine Sensation</strong></p>
+  <p>
+    展示少女峰鐵道與阿爾卑斯山開發歷史的展示空間。
+  </p>
+  <span class="speak" onclick="speak('Alpine Sensation', 'en-GB')">
+    Alpine Sensation 🔊
+  </span>
+  <hr class="divider">
+
+  <p><strong>12:30–13:30 建議用餐或休息</strong></p>
+
+  <p>
+    可於 Jungfraujoch 山上餐廳簡單用餐，
+    若天氣非常好，建議優先保留時間於觀景台與雪原區域。
+  </p>
+
+  <p>
+    若不想在山上用餐，也可下山後於 Grindelwald 小鎮再安排咖啡或輕食。
+  </p>
+
+  <hr class="divider">
+
+  <p><strong>13:30–14:00 開始下山</strong></p>
+
+  <p>
+    原路返回 Grindelwald Terminal，
+    並於 Grindelwald 小鎮停留。
+  </p>
+
+  <hr class="divider">
+
+  <p><strong>14:30–16:30 Grindelwald 小鎮停留</strong></p>
+
+  <p class="clickable" onclick="showImage('images/places/grindelwald/1.jpg')">
+    Grindelwald 為典型阿爾卑斯山小鎮，
+    適合散步、拍照、咖啡廳休息與欣賞山景。
+  </p>
+
+  <p>
+    建議停留約 1–2 小時，
+    作為高山行程後較放鬆的收尾。
+  </p>
+
+  <hr class="divider">
+
+  <p><strong>16:30–17:00 從 Grindelwald 回程</strong></p>
+
+  <p>
+    搭乘火車返回 Interlaken Ost，
+    再轉車返回 Thun。
+  </p>
+
+  <p><strong>18:00–19:00 抵達 Thun</strong></p>
+
+  <p>
+    晚上建議於 Thun 附近簡單用餐或休息，
+    不建議再安排長距離移動行程。
+  </p>
+</div>
+
+ <!-- 交通卡 -->
+<div class="card" id="transport">
+  <h2>交通方式</h2>
+
+  <p><strong>出發：Thun → Jungfraujoch（經 Grindelwald）</strong></p>
+
+  <p>
+    建議搭乘 06:54 從 Thun 出發的班次，
+    全程約 2 小時 17 分。
+  </p>
+
+  <p>
+    路線：
+    Thun → Interlaken Ost → Grindelwald Terminal → Eiger Glacier → Jungfraujoch
+  </p>
+
+  <hr class="divider">
+
+  <p><strong>第一段：Thun → Interlaken Ost</strong></p>
+
+  <p>
+    從 Thun 車站查看電子看板（Departures），
+    尋找前往 <strong>Interlaken Ost</strong> 的列車。
+  </p>
+
+  <p>
+    此段為一般火車，
+    車程約 30 分鐘，
+    沿圖恩湖行駛，風景很好。
+  </p>
+
+  <p>
+    此段可直接使用 Swiss Travel Pass，
+    不需額外購票。
+  </p>
+
+  <hr class="divider">
+
+  <p><strong>轉車：Interlaken Ost</strong></p>
+
+  <p>
+    抵達後依站內指標前往
+    <strong>Grindelwald Terminal</strong> 方向月台。
+  </p>
+
+  <p>
+    轉車通常為同層或鄰近月台，
+    動線簡單，
+    轉車時間約 5–10 分鐘即可。
+  </p>
+
+  <hr class="divider">
+
+  <p><strong>第二段：Interlaken Ost → Grindelwald Terminal</strong></p>
+
+  <p>
+    搭乘前往 Grindelwald Terminal 的列車，
+    車程約 35 分鐘。
+  </p>
+
+  <p>
+    此段仍屬 Swiss Travel Pass 可搭乘範圍，
+    不需額外付費。
+  </p>
+
+  <hr class="divider">
+
+  <p><strong>第三段：Grindelwald Terminal → Eiger Glacier</strong></p>
+
+  <p>
+    抵達 Grindelwald Terminal 後，
+    跟隨站內大型指標前往
+    <strong>Eiger Express</strong> 纜車站。
+  </p>
+
+  <p>
+    此段開始為少女峰登山區域，
+    需額外購買「Top of Europe」少女峰補票。
+  </p>
+
+  <p>
+    Eiger Express 為高速纜車，
+    車程約 15 分鐘，
+    可近距離看到 Eiger（艾格峰）北壁。
+  </p>
+
+  <hr class="divider">
+
+  <p><strong>第四段：Eiger Glacier → Jungfraujoch</strong></p>
+
+  <p>
+    抵達 Eiger Glacier（Eigergletscher）後，
+    直接依指標轉乘登山齒軌火車。
+  </p>
+
+  <p>
+    此段車程約 25 分鐘，
+    為最後一段登山路線。
+  </p>
+
+  <p>
+    火車會穿越山體隧道，
+    最終抵達 Jungfraujoch（Top of Europe）。
+  </p>
+
+  <hr class="divider">
+
+  <p><strong>票務說明（重要）</strong></p>
+
+  <p>
+    Swiss Travel Pass 可直接搭乘至 Grindelwald Terminal，
+    但從 Eiger Express 開始，
+    即需使用少女峰補票（Top of Europe Ticket）。
+  </p>
+
+  <p>
+    補票內容包含：
+  </p>
+
+  <p>
+    ・Eiger Express 纜車<br>
+    ・Eiger Glacier → Jungfraujoch 登山齒軌火車<br>
+    ・回程下山交通
+  </p>
+
+  <p>
+    建議不要在 Thun 提前購票，
+    而是於確認天氣後，
+    再於出發前幾天或當天早上購買。
+  </p>
+
+  <p>
+    少女峰非常依賴天氣，
+    若天氣不好，
+    山上可能完全看不到景色。
+  </p>
+
+  <p>
+    補票可於：
+  </p>
+
+  <p>
+    ・SBB App<br>
+    ・Jungfrau 官網<br>
+    ・Interlaken Ost 車站<br>
+    ・Grindelwald Terminal 現場
+  </p>
+  <p>
+    皆可購買。
+  </p>
+  <span class="speak" onclick="speak('Jungfrau', 'de-CH')">
+    Jungfrau 🔊
+  </span>
+  <hr class="divider">
+
+  <p><strong>回程：Jungfraujoch → Grindelwald → Thun</strong></p>
+
+  <p>
+    下山時原路返回，
+    先搭乘登山火車回到 Eiger Glacier，
+    再轉乘 Eiger Express 纜車返回 Grindelwald Terminal。
+  </p>
+
+  <p>
+    若安排於 Grindelwald 小鎮停留，
+    可於 Grindelwald Terminal 下山後，
+    再搭乘列車前往 Grindelwald 車站。
+  </p>
+
+  <p>
+    結束後，
+    搭乘列車返回 Interlaken Ost，
+    再轉車返回 Thun。
+  </p>
+
+  <hr class="divider">
+
+  <p><strong>補充說明</strong></p>
+
+  <p>
+    瑞士車站標示非常清楚，
+    建議以現場電子看板資訊為主。
+  </p>
+
+  <p>
+    Grindelwald 與 Grindelwald Terminal 為不同車站，
+    請注意不要提前下車。
+  </p>
+
+  <p>
+    若天氣非常好，
+    建議保留更多時間於 Jungfraujoch 山頂，
+    不需急著下山。
+  </p>
+</div>
   
     <div class="links">
-      <a href="#">車站位置</a>
       <a href="#">Google Map</a>
-      <a href="#">時刻查詢</a>
+      <a href="https://www.sbb.ch/en?utm_source=chatgpt.com&stops=Thun_I8507100~Jungfraujoch_I8507364&day=2026-05-20&time=06_00&moment=dep">時刻查詢</a>
     </div>
   </div>
 
