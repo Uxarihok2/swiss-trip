@@ -23,7 +23,7 @@ function showImage(src) {
     }
   
     speech.lang = lang;
-    speech.rate = 0.5;
+    speech.rate = 0.7;
   
     window.speechSynthesis.speak(speech);
   }
